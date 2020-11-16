@@ -2,7 +2,7 @@ require 'fileutils'
 require 'yaml'
 require 'date'
 
-OUTPUT_PATH = "build/output.pdf"
+OUTPUT_PATH = ENV["OUTPUT_PATH"] || "build/output.pdf"
 
 config_dir = "."
 
