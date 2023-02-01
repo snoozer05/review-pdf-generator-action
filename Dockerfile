@@ -9,6 +9,7 @@ LABEL "repository"="https://github.com/takahashim/review-pdf-generator-action"
 LABEL "homepage"="https://github.com/takahashim/review-pdf-generator-action"
 LABEL "maintainer"="takahashim <takahashimm@gmail.com>"
 
+RUN pip install pygments
 ADD entrypoint.sh /entrypoint.sh
 ADD copy_build_file.rb /copy_build_file.rb
 ENTRYPOINT ["/entrypoint.sh"]
